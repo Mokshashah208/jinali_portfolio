@@ -1,0 +1,160 @@
+.info-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.intro-headering {
+  text-align: center;
+  font-family: "Rubik";
+  padding-bottom: 60px;
+}
+.intro-content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.experiences-container {
+  padding-top: 60px;
+  background: #fff0f7;
+  border-radius: 25px;
+  height: 100%;
+}
+.ex-container {
+  width: 55%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 35px 10px 25px;
+  margin-left: 100px;
+}
+.title-container {
+  display: flex;
+  gap: 10px;
+}
+.year {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  text-align: center;
+  padding-top: 5px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.33px;
+  text-align: center;
+}
+.secound-container {
+  display: flex;
+  padding-left: 80px;
+}
+.Arrow {
+  height: 100px;
+}
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.start-container {
+  display: flex;
+  gap: 15px;
+}
+.curveArrow-container {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 10px 0px 60px;
+}
+.ex-container1 {
+  width: 60%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 35px 10px 25px;
+}
+.last-container {
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.ex-container20 {
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 35px 10px 25px;
+  margin-bottom: 50px;
+}
+.arrow1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 70px;
+}
+.my-flex {
+  padding-top: 10px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: left;
+}
+.my-flex:hover {
+  color: #f26606;
+}
+@media (max-width: 600px) {
+  .info-container {
+    width: 95%; /* Adjusted width for smaller screens */
+  }
+
+  .intro-headering {
+    padding-bottom: 30px; /* Reduced padding for smaller screens */
+  }
+
+  .intro-content {
+    width: 95%; /* Adjusted width for smaller screens */
+  }
+
+  .experiences-container {
+    padding-top: 30px; /* Reduced padding for smaller screens */
+    overflow: hidden; /* Ensure content doesn't overflow on smaller screens */
+  }
+
+  .ex-container,
+  .ex-container20 {
+    width: 90%; /* Adjusted width for smaller screens */
+    margin: 20px auto; /* Center the containers */
+  }
+  .ex-container1 {
+    width: 55%;
+    padding: 15px;
+  }
+  .year,
+  .title {
+    text-align: center; /* Center align text */
+  }
+
+  .secound-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .start-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .curveArrow-container {
+    justify-content: center; /* Center align items */
+    margin: 0px 10px 0px 30px;
+  }
+
+  .last-container {
+    padding-left: 10px; /* Adjusted padding for smaller screens */
+    padding-right: 10px; /* Adjusted padding for smaller screens */
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+  .secound-container {
+    padding-left: 1px;
+  }
+  .arrow1 {
+    width: 100%; /* Adjusted width for smaller screens */
+  }
+}

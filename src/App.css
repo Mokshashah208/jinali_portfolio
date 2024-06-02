@@ -1,38 +1,112 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tooltip1 {
+  position: relative;
+  display: inline-block;
+  font-family: "Rubik";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.22px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tooltip1 .tooltiptext {
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* Position the tooltip below the text */
+  left: 50%; /* Center horizontally */
+  transform: translateX(
+    -50%
+  ); /* Adjust the position to truly center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tooltip1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position the arrow at the top of the tooltip */
+  left: 50%; /* Center the arrow horizontally */
+  transform: translateX(
+    -50%
+  ); /* Adjust the position to truly center the arrow */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.tooltip1:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle {
+  cursor: pointer;
+  width: 35px; /* Width of the circle */
+  height: 35px; /* Height of the circle */
+  background-color: #ff3596; /* Background color of the circle */
+  border-radius: 50%; /* Makes the div a circle */
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
+.circle:hover {
+  background: #e1247f;
+}
+.circle-text {
+  font-family: "Rubik";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.22px;
+  text-align: center;
+}
+.tooltip2 {
+  padding: 0%;
+  position: relative;
+  display: inline-block;
+  font-family: "Rubik";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.22px;
+  text-align: center;
+}
+
+.tooltip2 .tooltiptext {
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 125%; /* Position the tooltip below the text */
+  right: 0; /* Align to the right */
+  margin-right: 0; /* Reset margin */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position the arrow at the top of the tooltip */
+  right: 10%; /* Align the arrow to match the text alignment */
+  margin-right: -5px; /* Center the arrow horizontally */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }

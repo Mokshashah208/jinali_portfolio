@@ -1,0 +1,59 @@
+.test-container {
+  width: 75%;
+  margin: 0 auto !important;
+  padding: 100px 0px;
+  font-family: "Rubik";
+}
+.inside-silider {
+  margin: 50px;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  opacity: 0px;
+  background-color: white;
+}
+.text {
+  padding: 10px 20px 10px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+.inside-silider-container{
+  border-radius: 10px;
+  margin: 0px 30px;
+}
+.text-h4 {
+  padding-top: 5px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.96px;
+  text-align: center;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+ }
+
+@media (max-width: 600px) {
+  .test-container {
+    width: 90%;
+    padding: 50px 0px;
+  }
+  .inside-silider {
+    margin: 20px;
+    padding: 10px;
+  }
+  .inside-silider-container{
+    margin: 0px 10px;
+  }
+}

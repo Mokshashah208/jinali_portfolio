@@ -1,0 +1,65 @@
+.highlight-container {
+  background: #2e2e2e;
+  color: white;
+}
+.info-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.intro-headering {
+  text-align: center;
+  font-family: "Rubik";
+  padding-bottom: 60px;
+}
+.intro-content {
+  width: 90% !important;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.highlight-headering {
+  text-align: left;
+  font-family: "Rubik";
+  padding-bottom: 30px;
+  color: black;
+}
+.highlight-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.7px;
+}
+.highlight-p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.data-container {
+  border-radius: 25px;
+  margin-bottom: 30px;
+  padding: 40px;
+  font-family: "Rubik";
+  text-align: left;
+  color: #0b2442;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+}
+.high-img {
+  height: auto;
+}
+@media (max-width: 768px) {
+  .data-container {
+    width: 80vw !important;
+    margin: 0 auto;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .high-img {
+    width: 100%;
+    height: auto;
+  }
+}

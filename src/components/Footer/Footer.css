@@ -1,0 +1,59 @@
+.footer-container {
+  background: #2e2e2e;
+  padding: 93px 145px 93px 145px;
+  gap: 10px;
+  border-radius: 155px 155px 0px 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-text {
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.44px;
+  text-align: center;
+}
+a {
+  all: unset;
+}
+.infomation-container {
+  display: flex;
+  gap: 15px;
+}
+.info-data {
+  display: flex;
+  gap: 15px;
+}
+.image-size {
+  width: 37px;
+  height: 36px;
+}
+.titek {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.33px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 7px;
+}
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .infomation-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container {
+    padding: 50px 10px 10px 10px;
+  }
+}
